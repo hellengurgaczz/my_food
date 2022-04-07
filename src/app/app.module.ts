@@ -18,6 +18,13 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { IncluirComponent } from './cadastro/produtos/incluir.component';
+import { ExcluirComponent } from './cadastro/produtos/excluir.component';
+import { EditarComponent } from './cadastro/produtos/editar.component';
+import { ListarComponent } from './cadastro/produtos/listar.component';
+import { HttpClientModule } from '@angular/common/http'
+
 
 
 @NgModule({
@@ -30,7 +37,12 @@ import {MatIconModule} from '@angular/material/icon';
     CardapioComponent,
     CarrinhoComponent,
     AdminComponent,
-    SobreComponent
+    SobreComponent,
+    CadastroComponent,
+    IncluirComponent,
+    ExcluirComponent,
+    EditarComponent,
+    ListarComponent
   ],
   imports: [
     MatIconModule,
@@ -39,7 +51,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatSliderModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
